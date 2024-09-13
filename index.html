@@ -15,7 +15,16 @@
         body {
             background-color: #c58b8b;
             text-align: center;
-            background-image: url(ty.jpg)
+            font-size: large;
+            font-weight: 200;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url(yutr.jpg)
+            
+            
+            
         }
         h1{
             font-size: 36px;
@@ -33,7 +42,7 @@
 
     document.getElementById('txt').innerHTML=today;
     </script>
-    <form id="studentForm" action="https://hianime.to/jujutsu-kaisen-tv-534" method="get">
+    <form id="studentForm" onsubmit="displayResult(); return false;">
         <table>
             <tr>
                 <th colspan="2" style="background-color: #069b08;"><h1 style="font-size: 3vw;">Student Registration Page</h1></th>
@@ -54,9 +63,9 @@
                 <td><label>Gender:</label></td>
                 <td>
                     <input type="radio" id="male" name="gender" value="Male" required>
-                    <label for="male" style="background-color: #069b08;">Male</label>
+                    <label for="male" style="background-color: #9b5f06;">Male</label>
                     <input type="radio" id="female" name="gender" value="Female" required>
-                    <label for="female" style="background-color: #069b08;">Female</label>
+                    <label for="female" style="background-color: #9b5f06;">Female</label>
                 </td>
             </tr>
             <tr>
