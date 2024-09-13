@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title style="background-color: #640000;">Student Form Fill Up Page</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 3px solid #000000;
+            padding: 9px;
+            text-align: center;
+            text-shadow: #069b08;
+        }
+        body {
+            background-color: #c58b8b;
+            text-align: center;
+            background-image: url(ty.jpg)
+        }
+        h1{
+            font-size: 36px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+    </style>
+</head>
+<body style="background-color: #c58b8b;">
+    Current Date and Time: <span id="txt"></span>
+    <script>
+    var today=new Date();
+
+    document.getElementById('txt').innerHTML=today;
+    </script>
+    <form id="studentForm" onsubmit="displayResult(); return false;">
+        <table>
+            <tr>
+                <th colspan="2" style="background-color: #069b08;"><h1 style="font-size: 3vw;">Student Registration Page</h1></th>
+            </tr>
+            <tr>
+                <td><label for="Name">Name:</label></td>
+                <td><input type="text" id="Name" name="Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="Roll No">Roll No:</label></td>
+                <td><input type="text" id="rollno" name="Roll No" required></td>
+            </tr>
+            <tr>
+                <td><label for="Sub.">Subject:</label></td>
+                <td><input type="text" id="Sub" name="Sub." required></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male" style="background-color: #069b08;">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female" style="background-color: #069b08;">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Location">Address:</label></td>
+                <td><textarea id="Location" name="Location" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Phnno">Phone No:</label></td>
+                <td><input type="text" id="Phnno" name="Phnno" required></td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">Hobbies:</label></td>
+                <td>
+                    <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="Watching" name="hobbies" value="Series/Anime">
+                    <label for="Series/Anime">Entertainment Series</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="state">Select State:</label></td>
+                <td>
+                    <select id="state" name="state" required> 
+                        <option value="" disabled selected>Select a state</option>
+                        <option value="AP">Andhra Pradesh</option>
+                        <option value="KA">Assam</option>
+                        <option value="MH">Maharashtra</option>
+                        <option value="MH">Uttar Pradesh</option> 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
